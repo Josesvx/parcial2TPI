@@ -24,10 +24,10 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  *
- * @author joker
+ * @author alexander
  */
 @Entity
-@Table(name = "calendario", catalog = "mantenimientodb", schema = "public")
+@Table(name = "calendario_excepcion", catalog = "mantenimientodb", schema = "public")
 @XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "CalendarioExcepcion.findAll", query = "SELECT c FROM CalendarioExcepcion c")
@@ -120,7 +120,7 @@ public class CalendarioExcepcion implements Serializable {
 
     @Override
     public String toString() {
-        return "sv.edu.uesocc.ingenieria.tpi135_2018.mantenimiento.entidades.CalendarioExcepcion[ idExcepcion=" + idExcepcion + " ]";
+        return "sv.edu.ues.fmocc.ingenieria.tpi135.parcial2.entidades.CalendarioExcepcion[ idExcepcion=" + idExcepcion + " ]";
     }
     
 }
